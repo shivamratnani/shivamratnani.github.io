@@ -4,8 +4,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Set the background to white */
-  color: #000; /* Set the text color to black */
+  background-color: #f0f5f9; /* Light blue background */
+  color: #000; /* Black text color */
 }
 
 a {
@@ -17,8 +17,8 @@ a:hover {
 }
 
 header {
-  background-color: #222;
-  color: #fff;
+  background-color: #3498db; /* Light blue header background */
+  color: #fff; /* White header text color */
   padding: 1rem;
   text-align: center;
 }
@@ -59,27 +59,27 @@ p {
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
+  background-color: #3498db; /* Light blue footer background */
+  color: #fff; /* White footer text color */
   padding: 1rem;
   text-align: center;
 }
 
 /* Navigation styles */
 .navbar {
-  background-color: #000;
+  background-color: #f0f5f9; /* Light blue navbar background */
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
 
 .navbar a {
-  color: #fff;
+  color: #000; /* Black navbar text color */
   text-decoration: none;
   margin: 0 1rem;
   border-radius: 20px; /* Make the buttons rounded */
   padding: 8px 16px; /* Add some padding to the buttons */
-  background-color: #3498db; /* Blue background color for buttons */
+  background-color: #3498db; /* Light blue button background color */
   transition: background-color 0.3s;
 }
 
@@ -95,8 +95,8 @@ footer {
 
 .button {
   display: inline-block;
-  background-color: #3498db;
-  color: #fff;
+  background-color: #3498db; /* Light blue button background color */
+  color: #fff; /* White button text color */
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -105,7 +105,7 @@ footer {
 }
 
 .button:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Darker blue color on hover */
 }
 
 .section-title {
