@@ -4,8 +4,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff; /* Set the background to white */
+  color: #000; /* Set the text color to black */
 }
 
 a {
