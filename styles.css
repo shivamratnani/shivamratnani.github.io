@@ -9,15 +9,15 @@ body {
 }
 
 a {
-  color: #3498db;
+  color: #800000; /* Dark maroon link color */
 }
 
 a:hover {
-  color: #2980b9;
+  color: #800000; /* Dark maroon link color on hover */
 }
 
 header {
-  background-color: #3498db; /* Light blue header background */
+  background-color: #800000; /* Dark maroon header background */
   color: #fff; /* White header text color */
   padding: 1rem;
   text-align: center;
@@ -29,12 +29,12 @@ main {
 
 h1 {
   margin-bottom: 1rem;
-  color: #3498db;
+  color: #800000; /* Dark maroon heading color */
 }
 
 h2 {
   margin-bottom: 0.5rem;
-  color: #3498db;
+  color: #800000; /* Dark maroon heading color */
 }
 
 p {
@@ -47,7 +47,7 @@ p {
 
 .project h3 {
   margin-bottom: 0.5rem;
-  color: #3498db;
+  color: #800000; /* Dark maroon heading color */
 }
 
 .project p {
@@ -59,7 +59,7 @@ p {
 }
 
 footer {
-  background-color: #3498db; /* Light blue footer background */
+  background-color: #800000; /* Dark maroon footer background */
   color: #fff; /* White footer text color */
   padding: 1rem;
   text-align: center;
@@ -79,12 +79,12 @@ footer {
   margin: 0 1rem;
   border-radius: 20px; /* Make the buttons rounded */
   padding: 8px 16px; /* Add some padding to the buttons */
-  background-color: #3498db; /* Light blue button background color */
+  background-color: #800000; /* Dark maroon button background color */
   transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #2980b9; /* Darker blue color on hover */
+  background-color: #800000; /* Darker maroon color on hover */
 }
 
 /* Additional styles for a professional look */
@@ -95,7 +95,7 @@ footer {
 
 .button {
   display: inline-block;
-  background-color: #3498db; /* Light blue button background color */
+  background-color: #800000; /* Dark maroon button background color */
   color: #fff; /* White button text color */
   padding: 10px 20px;
   text-align: center;
@@ -105,13 +105,13 @@ footer {
 }
 
 .button:hover {
-  background-color: #2980b9; /* Darker blue color on hover */
+  background-color: #800000; /* Darker maroon color on hover */
 }
 
 .section-title {
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid #800000; /* Dark maroon border bottom */
   padding-bottom: 10px;
-  color: #3498db;
+  color: #800000; /* Dark maroon section title color */
 }
 
 .profile-image {
