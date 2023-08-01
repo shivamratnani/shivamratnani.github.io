@@ -4,8 +4,10 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f0f5f9; /* Light blue background */
-  color: #000; /* Black text color */
+  background-color: #f0f5f9;
+  /* Light blue background */
+  color: #000;
+  /* Black text color */
 }
 
 a {
@@ -17,14 +19,17 @@ a:hover {
 }
 
 header {
-  background-color: #3498db; /* Light blue header background */
-  color: #fff; /* White header text color */
+  background-color: #3498db;
+  /* Light blue header background */
+  color: #fff;
+  /* White header text color */
   padding: 1rem;
   text-align: center;
 }
 
 header img.profile-image {
-  margin-top: 20px; /* Add space above the profile image */
+  margin-top: 20px;
+  /* Add space above the profile image */
 }
 
 main {
@@ -63,33 +68,42 @@ p {
 }
 
 footer {
-  background-color: #3498db; /* Light blue footer background */
-  color: #fff; /* White footer text color */
+  background-color: #3498db;
+  /* Light blue footer background */
+  color: #fff;
+  /* White footer text color */
   padding: 1rem;
   text-align: center;
 }
 
 /* Navigation styles */
 .navbar {
-  background-color: #f0f5f9; /* Light blue navbar background */
+  background-color: #f0f5f9;
+  /* Light blue navbar background */
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-radius: 20px; /* Make the button housing rounded */
+  border-radius: 20px;
+  /* Make the button housing rounded */
 }
 
 .navbar a {
-  color: #000; /* Black navbar text color */
+  color: #000;
+  /* Black navbar text color */
   text-decoration: none;
   margin: 0 1rem;
-  border-radius: 20px; /* Make the buttons rounded */
-  padding: 8px 16px; /* Add some padding to the buttons */
-  background-color: #3498db; /* Light blue button background color */
+  border-radius: 20px;
+  /* Make the buttons rounded */
+  padding: 8px 16px;
+  /* Add some padding to the buttons */
+  background-color: #3498db;
+  /* Light blue button background color */
   transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #2980b9; /* Darker blue color on hover */
+  background-color: #2980b9;
+  /* Darker blue color on hover */
 }
 
 /* Additional styles for a professional look */
@@ -100,17 +114,26 @@ footer {
 
 .button {
   display: inline-block;
-  background-color: #3498db; /* Light blue button background color */
-  color: #fff; /* White button text color */
+  background-color: #3498db;
+  /* Light blue button background color */
+  color: #fff;
+  /* White button text color */
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
+  margin-right: 20px;
+}
+
+.button:last-child {
+  margin-right: 0;
+  /* Remove margin for the last button */
 }
 
 .button:hover {
-  background-color: #2980b9; /* Darker blue color on hover */
+  background-color: #2980b9;
+  /* Darker blue color on hover */
 }
 
 .section-title {
@@ -137,4 +160,11 @@ footer {
 .gallery img {
   max-width: 100%;
   border-radius: 8px;
+}
+
+/* Additional styles for the buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
