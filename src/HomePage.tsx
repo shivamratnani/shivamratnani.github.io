@@ -150,8 +150,7 @@ const HomePage: React.FC = () => {
       >
         <h1>Resume</h1>
         <p>Your inline resume goes here</p>
-        // eslint-disable-next-line jsx-a11y/iframe-has-title
-        <iframe> Resume</iframe>
+        <iframe title = "Resume"> Resume </iframe>
         <a
           href="/Users/shivamratnani/my-app/Resume.pdf" //FUCKING FIGURE THIS OUT
           download
