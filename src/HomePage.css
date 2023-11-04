@@ -1,0 +1,78 @@
+/* src/HomePage.css */
+
+.home-page {
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #C4A484;
+  padding: 10px 0;
+  border-radius: 15px;
+}
+
+.element {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.interactive-button,
+.theme-toggle {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.2s; /* Animation */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.interactive-button:hover,
+.theme-toggle:hover {
+  transform: scale(
+    1.1
+  ); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.to-top-button {
+  position: fixed;
+  left: 0px;
+  top: 20px;
+  z-index: 1000; /* Make sure the button is always visible */
+}
+
+p {
+  font-family: verdana;
+  font-size: 12pt;
+  color: black;
+  text-align: left;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .element h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .element hr {
+    width: 65%;
+    border: 2px solid #967969;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+
+  
