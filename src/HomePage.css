@@ -5,15 +5,17 @@
 }
 
 .navbar {
+  font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   justify-content: space-evenly;
-  background-color: #C4A484;
+  background-color: #c4a484;
   padding: 10px 0;
   border-radius: 15px;
 }
 
 .element {
-  height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +23,8 @@
   padding: 10px;
   border-radius: 10px;
 }
+/* add space in between HomePage buttons */
+
 
 .interactive-button,
 .theme-toggle {
@@ -31,13 +35,35 @@
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  margin: 2px;
 }
 
 .interactive-button:hover,
 .theme-toggle:hover {
   transform: scale(
     1.1
-  ); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  );
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+}
+
+.interactive-button-2,
+.theme-toggle {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.2s; /* Animation */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 2px;
+}
+
+.interactive-button-2:hover,
+.theme-toggle:hover {
+  transform: scale(
+    1.1
+  );
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.72) ;
 }
 
 .to-top-button {
@@ -48,31 +74,108 @@
 }
 
 p {
-  font-family: verdana;
-  font-size: 12pt;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20pt;
   color: black;
   text-align: left;
 }
 
+.about-container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between the elements as needed */
+}
+
+.profile-container {
+  flex: 0 0 auto; /* Do not grow or shrink */
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #e8ded1; /* Change this to match your theme color */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+}
+
+.profile-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
 .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .element h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .element hr {
-    width: 65%;
-    border: 2px solid #967969;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
+  width: 100%; /* Make the image fill the container */
+  height: 685px;
+  border-radius: 0;
+}
 
+.about-section {
+  flex: 1 1 auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #e8ded1; /* Change this to match your theme color */
+  text-align: left; /* Align text to the left */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+}
 
-  
+.about-section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.element h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.element h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.element hr {
+  width: 65%;
+  border: 2px solid #967969;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.projects-container,
+.certifications-grid {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projects-section {
+  margin-bottom: 40px;
+} 
+
+.projects-grid,
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px; /* This is the space between the grid items */
+}
+
+.project-box,
+.certification-box {
+  flex: 0 1 calc(40% - 10px); /* This makes sure that each box will take up 50% of the container width minus 20px for the gap */
+  background-color: #A0816C; /* Replace with the desired background color */
+  border: 1px solid #A0816C; /* Replace with the desired border style */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner space between content and border */
+  margin-bottom: 20px; /* Space between rows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Simple shadow for depth */
+  transition: box-shadow 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+.project-box:hover,
+.certification-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .project-box,
+  .certification-box {
+    flex-basis: 100%; /* On smaller screens, each box will take the full width */
+  }
+}

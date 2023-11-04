@@ -98,67 +98,65 @@ const HomePage: React.FC = () => {
         className="element"
         style={{ backgroundColor: theme.sectionHome }}
       >
-        <h1>Welcome to My Website!</h1>
-        <img
-          src="your-image-url-here"
-          alt="Profile"
-          className="profile-image"
-        />
-        <h2>About Me</h2>
-        <hr />
-        <p style={{ color: theme.p}}>
-          My name is <b>Shivam Ratnani</b>, and I am a dedicated software
-          engineer with a passion for solving complex problems and building
-          innovative solutions. With a strong foundation in many languages such
-          as Java, C#, and React.js(The language this website is written in), I
-          bring a unique approach to developing high-quality, efficient, and
-          reliable software. Throughout my career, I've had the privilege to
-          create a variety of projects ranging from this website to an Amazon
-          Web Scraper, each of which has reinforced my commitment to continual
-          learning, attention to detail, and result-driven execution. This
-          portfolio is a curated representation of my technical skillset,
-          showcasing projects that I'm particularly proud of. Each one has been
-          a journey of growth, pushing the boundaries of my knowledge and
-          skills. Thank you for taking the time to visit! If you have any
-          questions or would like to connect, please feel free to reach out to
-          me on LinkedIn.
-        </p>
+        <div className="about-container">
+          <div className="profile-container">
+            <img src="profile.jpg" className="profile-image" alt="Profile" />
+          </div>
+          <div className="about-section">
+            <h1>About Me</h1>
+            <hr />
+            <p style={{ color: theme.p }}>
+              My name is <b>Shivam Ratnani</b>, and I am a dedicated software
+              engineer with a passion for solving complex problems and building
+              innovative solutions. With a strong foundation in many languages
+              such as Java, C#, and React.js(The language this website is
+              written in), I bring a unique approach to developing high-quality,
+              efficient, and reliable software. Throughout my career, I've had
+              the privilege to create a variety of projects ranging from this
+              website to an Amazon Web Scraper, each of which has reinforced my
+              commitment to continual learning, attention to detail, and
+              result-driven execution. This portfolio is a curated
+              representation of my technical skillset, showcasing projects that
+              I'm particularly proud of. Each one has been a journey of growth,
+              pushing the boundaries of my knowledge and skills. Thank you for
+              taking the time to visit! If you have any questions or would like
+              to connect, please feel free to reach out to me on LinkedIn.
+            </p>
 
-        {/*LinkedIn button*/}
-        <button
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
-        >
-          <Link to="https://www.linkedin.com/in/shivam-ratnani-9b0b3a1a0/">
-            LinkedIn
-          </Link>
-        </button>
+            {/*LinkedIn button*/}
+            <a
+              className="interactive-button-2"
+              href="https://www.linkedin.com/in/shivamratnani"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ backgroundColor: theme.button }}
+            >
+              LinkedIn
+            </a>
 
-        {/*Github button*/}
-        <button
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
-        >
-          <Link to="https://github.com/shivamratnani">Github</Link>
-        </button>
-      </Element>
+            {/*Github button*/}
+            <a
+              className="interactive-button-2"
+              href="https://github.com/shivamratnani"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ backgroundColor: theme.button }}
+            >
+              Github
+            </a>
 
-      <Element
-        name="section2"
-        className="element"
-        style={{ backgroundColor: theme.sectionResume }}
-      >
-        <h1>Resume</h1>
-        <p>Your inline resume goes here</p>
-        <iframe title = "Resume"> Resume </iframe>
-        <a
-          href="/Users/shivamratnani/my-app/Resume.pdf" //FUCKING FIGURE THIS OUT
-          download
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
-        >
-          Download Resume
-        </a>
+            {/*Resume button*/}
+            <a
+              className="interactive-button-2"
+              href="Shivam Ratnani - Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ backgroundColor: theme.button }}
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
       </Element>
 
       <Element
@@ -167,21 +165,78 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionProjects }}
       >
         <h1>Projects</h1>
-        {Array(5)
-          .fill(0)
-          .map((_, index) => (
-            <div key={index}>
-              <h2>Project {index + 1}</h2>
-              <p>Brief overview of the project goes here</p>
-              <a
-                href="link-to-project"
-                className="interactive-button"
-                style={{ backgroundColor: theme.button }}
-              >
-                Project Link
-              </a>
+
+        <div className="projects-container">
+          <div className="projects-section">
+            <h2>In Progress</h2>
+            <div className="projects-grid">
+              {Array(4)
+                .fill(0)
+                .map((_, index) => (
+                  <div key={index} className="project-box">
+                    <h3>Project {index + 1}</h3>
+                    <p>Description of the in-progress project goes here.</p>
+                    {/* Other project details */}
+                  </div>
+                ))}
             </div>
-          ))}
+          </div>
+
+          <div className="projects-section">
+            <h2>Completed</h2>
+            <div className="projects-grid">
+              {Array(4)
+                .fill(0)
+                .map((_, index) => (
+                  <div key={index} className="project-box">
+                    <h3>Project {index + 5}</h3>
+                    <p>Description of the completed project goes here.</p>
+                    {/* Other project details */}
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
+      </Element>
+
+      <Element
+        name="sectionCertifications"
+        className="element"
+        style={{ backgroundColor: theme.sectionProjects }}
+      >
+        <h1>Certifications</h1>
+        <div className="certifications-grid">
+          {Array(4)
+            .fill(0)
+            .map((_, index) => (
+              <div key={index} className="certification-box">
+                <h3>Certification {index + 1}</h3>
+                <p>Description of the certification goes here.</p>
+                {/* Other certification details */}
+              </div>
+            ))}
+        </div>
+      </Element>
+
+      <Element
+        name="section2"
+        className="element"
+        style={{ backgroundColor: theme.sectionResume }}
+      >
+        <h1>Resume</h1>
+        <iframe
+          title="Resume"
+          src="Shivam Ratnani - Resume.pdf"
+          style={{ width: "100%", height: 1125, border: "none" }}
+        ></iframe>
+        <a
+          href="Shivam Ratnani - Resume.pdf"
+          download
+          className="interactive-button"
+          style={{ backgroundColor: theme.button }}
+        >
+          Download Resume
+        </a>
       </Element>
 
       <Element
@@ -202,10 +257,5 @@ const HomePage: React.FC = () => {
     </div>
   );
 };
-
-
-
-//write a date method that outputs the current date in java
-
 
 export default HomePage;
