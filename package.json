@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.7",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
   }
 }
