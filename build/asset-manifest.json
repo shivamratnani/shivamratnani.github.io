@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shivamratnani.github.io/static/css/main.62efa5bd.css",
+    "main.js": "/shivamratnani.github.io/static/js/main.c5958d9e.js",
+    "static/js/787.cfb6a57f.chunk.js": "/shivamratnani.github.io/static/js/787.cfb6a57f.chunk.js",
+    "index.html": "/shivamratnani.github.io/index.html",
+    "main.62efa5bd.css.map": "/shivamratnani.github.io/static/css/main.62efa5bd.css.map",
+    "main.c5958d9e.js.map": "/shivamratnani.github.io/static/js/main.c5958d9e.js.map",
+    "787.cfb6a57f.chunk.js.map": "/shivamratnani.github.io/static/js/787.cfb6a57f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62efa5bd.css",
+    "static/js/main.c5958d9e.js"
+  ]
+}
