@@ -23,29 +23,9 @@
   padding: 10px;
   border-radius: 10px;
 }
-/* add space in between HomePage buttons */
 
-
+/* Buttons */
 .interactive-button,
-.theme-toggle {
-  padding: 10px 20px;
-  font-size: 16px;
-  transition: transform 0.2s; /* Animation */
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 12px;
-  margin: 2px;
-}
-
-.interactive-button:hover,
-.theme-toggle:hover {
-  transform: scale(
-    1.1
-  );
-  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
-}
-
 .interactive-button-2,
 .theme-toggle {
   padding: 10px 20px;
@@ -58,12 +38,11 @@
   margin: 2px;
 }
 
+.interactive-button:hover,
 .interactive-button-2:hover,
 .theme-toggle:hover {
-  transform: scale(
-    1.1
-  );
-  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.72) ;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .to-top-button {
@@ -73,6 +52,7 @@
   z-index: 1000; /* Make sure the button is always visible */
 }
 
+/* Text */
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20pt;
@@ -80,28 +60,29 @@ p {
   text-align: left;
 }
 
+/* About Section */
 .about-container {
   display: flex;
   align-items: left;
   justify-content: center;
-  gap: 20px; /* Adjust the gap between the elements as needed */
+  gap: 20px;
 }
 
 .profile-container {
-  flex: 0 0 auto; /* Do not grow or shrink */
+  flex: 0 0 auto;
   padding: 10px;
   border-radius: 15px;
-  background-color: #e8ded1; /* Change this to match your theme color */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+  background-color: #e8ded1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .profile-container:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .profile-image {
-  width: 100%; /* Make the image fill the container */
-  height: 685px;
+  width: 100%;
+  height: auto;
   border-radius: 0;
 }
 
@@ -109,21 +90,23 @@ p {
   flex: 1 1 auto;
   padding: 20px;
   border-radius: 15px;
-  background-color: #e8ded1; /* Change this to match your theme color */
-  text-align: left; /* Align text to the left */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+  background-color: #e8ded1;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .about-section:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
+/* Headings */
 .element h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
+
 .element h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 20px;
@@ -137,6 +120,7 @@ p {
   margin-bottom: 20px;
 }
 
+/* Projects and Certifications Grid */
 .projects-container,
 .certifications-grid {
   width: 100%;
@@ -145,37 +129,70 @@ p {
 
 .projects-section {
   margin-bottom: 40px;
-} 
+}
 
 .projects-grid,
 .certifications-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px; /* This is the space between the grid items */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .project-box,
 .certification-box {
-  flex: 0 1 calc(40% - 10px); /* This makes sure that each box will take up 50% of the container width minus 20px for the gap */
-  background-color: #A0816C; /* Replace with the desired background color */
-  border: 1px solid #A0816C; /* Replace with the desired border style */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Inner space between content and border */
-  margin-bottom: 20px; /* Space between rows */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Simple shadow for depth */
-  transition: box-shadow 0.3s ease-in-out; /* Transition for hover effect */
+  background-color: #A0816C;
+  border: 1px solid #A0816C;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .project-box:hover,
 .certification-box:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Adjustments for responsiveness */
 @media (max-width: 768px) {
   .project-box,
   .certification-box {
-    flex-basis: 100%; /* On smaller screens, each box will take the full width */
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .interactive-button,
+  .interactive-button-2,
+  .theme-toggle {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .to-top-button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .projects-grid,
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .element {
+    padding: 20px;
+  }
+
+  .project-box,
+  .certification-box {
+    padding: 20px;
+    margin-bottom: 20px;
   }
 }
