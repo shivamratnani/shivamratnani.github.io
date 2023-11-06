@@ -9,6 +9,7 @@ export const themes = {
     button: '#7ca666', // sage green
     upButton: 'lightblue', // light blue
     toggle: '#7ca666', // sage green
+    about: '#e8ded1', // black
     p: '#000000', // black
     section: '#d3d3d3', // light gray
     sectionHome: "#e8ded1", // beige
@@ -18,16 +19,17 @@ export const themes = {
   },
   dark: {
     foreground: '#ffffff',
-    background: 'black',
+    background: 'darkgrey',
     button: '#7ca666', // sage green
     upButton: 'lightblue', // light blue
     toggle: '#7ca666', // sage green
+    about: 'darkgrey', // black
     p: '#ffffff', // white
-    section: 'black', // black
-    sectionHome: 'black', 
-    sectionResume: 'black', 
-    sectionProjects: 'black', 
-    sectionPhotography: 'black', 
+    section: 'rgb(35, 35, 35)', // black
+    sectionHome: 'darrgb(45, 45, 45)kgrey', 
+    sectionResume: 'rgb(55, 55, 55)', 
+    sectionProjects: 'rgb(65, 65, 65)', 
+    sectionPhotography: 'rgb(75, 75, 75)'
   },
 };
 

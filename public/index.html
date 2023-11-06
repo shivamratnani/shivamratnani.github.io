@@ -5,10 +5,7 @@
     <link rel="icon" href="logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Shivam Ratnani's Portfolio Website."
-    />
+    <meta name="description" content="Shivam Ratnani's Portfolio Website." />
     <link rel="apple-touch-icon" href="logo.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -26,6 +23,19 @@
     -->
     <title>Shivam Ratnani's Portfolio Website</title>
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-9F649HZLZH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-9F649HZLZH");
+  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

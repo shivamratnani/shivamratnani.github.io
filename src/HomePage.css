@@ -28,6 +28,8 @@
 .interactive-button,
 .interactive-button-2,
 .theme-toggle {
+  width: 10vw;
+  height: 50px;
   padding: 10px 20px;
   font-size: 16px;
   transition: transform 0.2s; /* Animation */
@@ -48,13 +50,13 @@
 
 .to-top-button {
   position: fixed;
-  right: 10px; /* Position to the bottom-right corner */
+  right: 35px; /* Position to the bottom-right corner */
   bottom: 10px; /* Position to the bottom-right corner */
   z-index: 1000; /* Make sure the button is always visible */
-  padding: 10px;
+  padding: 2vw;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 20%; /* Optional: Makes the button circular */
+  border-radius: 15px; /* Optional: Makes the button circular */
   background-color: #c4a484; /* Same as navbar for consistency */
   color: white;
   border: none;
@@ -66,10 +68,17 @@
 }
 
 /* Text */
-p {
+p{
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: clamp(10px, 2vw, 20px);
   color: black;
+  text-align: left;
+}
+
+li{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(16px);
+  color: white;
   text-align: left;
 }
 
@@ -125,14 +134,33 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 20px;
   margin-bottom: 10px;
+  text-align: lefcentert;
+}
+
+.element h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .element hr {
-  width: 65%;
-  border: 2px solid #967969;
+  width: 75%;
+  border: 2px solid #1B0000;
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
+.divider {
+  height: 4px;
+  background-color: #1B0000;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 50%;
+  align-self: center;
+}
+
+
 
 /* Projects and Certifications Grid */
 .projects-container,
@@ -176,9 +204,13 @@ p {
   }
 
   .interactive-button,
-  .interactive-button-2,
+  .interactive-button-2 {
+    width: 75vw; /* Slightly less than full width for some margin */
+    margin: 10px 0; /* Add some space between buttons */
+  }
+
   .theme-toggle {
-    width: 90%; /* Slightly less than full width for some margin */
+    width: 75vw; /* Slightly less than full width for some margin */
     margin: 10px 0; /* Add some space between buttons */
   }
 
@@ -215,9 +247,8 @@ p {
   }
 
   .to-top-button {
-    right: 10px; /* Position to the bottom-right corner */
-    bottom: 10px;
-    left: auto;
+    width: 10%; /* Slightly less than full width for some margin */
+    margin: 10px 0; /* Add some space between buttons */
   }
 
   /* Larger touch targets for all interactive elements */
@@ -236,13 +267,13 @@ p {
   .interactive-button,
   .interactive-button-2,
   .theme-toggle {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 1rem;
   }
 
   .to-top-button {
-    right: 10px; /* Keeps button 10px from the right on mobile */
-    bottom: 10px; /* Keeps button 10px from the bottom on mobile */
+    width: 10%; /* Slightly less than full width for some margin */
+    margin: 10px 0; /* Add some space between buttons */
     
   }
 

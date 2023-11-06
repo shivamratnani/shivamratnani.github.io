@@ -1,12 +1,18 @@
 // src/HomePage.tsx
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./HomePage.css";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { ThemeContext } from "./themeContext";
+import ReactGA from "react-ga";
 
 const HomePage: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    ReactGA.initialize("YG-9F649HZLZH");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   const scrollToTop = () => {
     scroll.scrollToTop();
@@ -23,66 +29,68 @@ const HomePage: React.FC = () => {
       </button>
 
       <div className="navbar">
-        <button
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
+        <Link
+          activeClass="active"
+          to="section1"
+          spy={true}
+          smooth={true}
+          offset={70}
+          duration={500}
         >
-          <Link
-            activeClass="active"
-            to="section1"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+          <button
+            className="interactive-button"
+            style={{
+              backgroundColor: theme.button,
+            }}
           >
             Home
-          </Link>
-        </button>
-        <button
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
+          </button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="section2"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
         >
-          <Link
-            activeClass="active"
-            to="section2"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+          <button
+            className="interactive-button"
+            style={{ backgroundColor: theme.button }}
           >
             Resume
-          </Link>
-        </button>
-        <button
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
+          </button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="section3"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
         >
-          <Link
-            activeClass="active"
-            to="section3"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+          <button
+            className="interactive-button"
+            style={{ backgroundColor: theme.button }}
           >
             Projects
-          </Link>
-        </button>
-        <button
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
+          </button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="section4"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
         >
-          <Link
-            activeClass="active"
-            to="section4"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+          <button
+            className="interactive-button"
+            style={{ backgroundColor: theme.button }}
           >
             Photography
-          </Link>
-        </button>
+          </button>
+        </Link>
         <button
           onClick={toggleTheme}
           className="theme-toggle"
@@ -102,9 +110,12 @@ const HomePage: React.FC = () => {
           <div className="profile-container">
             <img src="profile.jpg" className="profile-image" alt="Profile" />
           </div>
-          <div className="about-section">
+          <div
+            className="about-section"
+            style={{ backgroundColor: theme.about }}
+          >
             <h1>About Me</h1>
-            <hr />
+          <div className="divider"></div>
             <p style={{ color: theme.p }}>
               My name is <b>Shivam Ratnani</b>, and I am a dedicated software
               engineer with a passion for solving complex problems and building
@@ -129,7 +140,7 @@ const HomePage: React.FC = () => {
               href="https://www.linkedin.com/in/shivamratnani"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: theme.button }}
+              style={{ backgroundColor: theme.button}}
             >
               LinkedIn
             </a>
@@ -165,36 +176,100 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionProjects }}
       >
         <h1>Projects</h1>
+        <hr />
 
         <div className="projects-container">
           <div className="projects-section">
             <h2>In Progress</h2>
-            <div className="projects-grid">
-              {Array(4)
-                .fill(0)
-                .map((_, index) => (
-                  <div key={index} className="project-box">
-                    <h3>Project {index + 1}</h3>
-                    <p>Description of the in-progress project goes here.</p>
-                    {/* Other project details */}
-                  </div>
-                ))}
+
+              <div className="divider"></div>
+            <div className="project-box">
+              {/* Mobile Task Application */}
+              <h3>
+                Mobile Task Application |
+                github.com/shivamratnani/Flutter-Task-App
+              </h3>
+              <li>
+                Specializes in cross-platform and native iOS app development,
+                utilizing Flutter and SwiftUI to deliver a highly responsive
+                task management application that adheres to Apple’s Human
+                Interface Guidelines.
+              </li>
+              <li>
+                Enhances user experience by implementing core iOS design
+                elements, animations, and integrating features like widgets and
+                Siri shortcuts for optimal app performance on iOS devices.
+              </li>
+              <li>
+                Integrates advanced functionalities such as real-time
+                notifications and iCloud syncing, ensuring seamless task
+                management and device synchronization for users.
+              </li>
+
+              {/* Amazon Web Scraper */}
+              <h3>
+                Amazon Web Scraper github.com/shivamratnani/Amazon-Web-Scraper
+              </h3>
+              <li>
+                Engineered a Python scraper to collect Amazon product data,
+                utilizing BeautifulSoup, Selenium, and requests for web parsing,
+                browser automation, and HTTP interactions.
+              </li>
+              <li>
+                Designed data storage solutions using CSV format for the
+                efficient organization and retrieval of product names, prices,
+                ratings, reviews, and URLs.
+              </li>
+              <li>
+                Deployed dynamic browser driver management and robust error
+                handling, ensuring seamless functionality and data accuracy.
+              </li>
+              <li>
+                Packaged the application into an executable for ease of use,
+                with documentation highlighting maintenance and update
+                requirements.
+              </li>
             </div>
           </div>
 
-          <div className="projects-section">
-            <h2>Completed</h2>
-            <div className="projects-grid">
-              {Array(4)
-                .fill(0)
-                .map((_, index) => (
-                  <div key={index} className="project-box">
-                    <h3>Project {index + 5}</h3>
-                    <p>Description of the completed project goes here.</p>
-                    {/* Other project details */}
-                  </div>
-                ))}
-            </div>
+          <h2>Completed</h2>
+              <div className="divider"></div>
+          <div className="projects-box">
+            {/* Website */}
+            <h3>Website github.com/shivamratnani/shivamratnani.github.io</h3>
+            <li>Created a website using HTML and CSS Styling</li>
+            <li>
+              Improvised my website using React.js and Material UI elements
+              allowing it to contain a dark mode feature, reactive buttons, and
+              mobile device compatibility
+            </li>
+            <li>
+              Uses Github Actions to host React app on shivamratnani.github.io
+              and a server through AWS to host a personal photography website
+            </li>
+            {/* Connect 4 */}
+            <h3>Connect 4 Game https://github.com/shivamratnani/Connect-4</h3>
+            <li>
+              Developed a 2 player game of Connect 4 containing multiple
+              difficulty levels with a graphical user interface, demonstrating
+              proficiency in object-oriented programming and game development
+              logic.
+            </li>
+            <li>
+              Designed game state management using custom methods for
+              horizontal, vertical, diagonal, and draw checks within the checks
+              class to determine game outcomes.
+            </li>
+            <li>
+              Implemented user interactions through the Java Scanner class for
+              input handling, allowing players to place pieces on a graphical
+              interface.
+            </li>
+            <li>
+              Constructed a user-friendly graphical interface using Java Swing,
+              allowing for interactive gameplay with button-based column
+              selections and panel-based board visualization.
+            </li>{" "}
           </div>
         </div>
       </Element>
@@ -205,16 +280,11 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionProjects }}
       >
         <h1>Certifications</h1>
-        <div className="certifications-grid">
-          {Array(4)
-            .fill(0)
-            .map((_, index) => (
-              <div key={index} className="certification-box">
-                <h3>Certification {index + 1}</h3>
-                <p>Description of the certification goes here.</p>
-                {/* Other certification details */}
-              </div>
-            ))}
+              <div className="divider"></div>
+        <div className="certification-box">
+          <h3>Certification</h3>
+          <p>Description of the certification goes here.</p>
+          {/* Other certification details */}
         </div>
       </Element>
 
@@ -224,6 +294,7 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionResume }}
       >
         <h1>Resume</h1>
+        <hr />
         <iframe
           title="Resume"
           src="Shivam Ratnani - Resume.pdf"
@@ -245,6 +316,7 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionPhotography }}
       >
         <h1>Photography</h1>
+        <hr />
         <p>Your inline website view goes here</p>
         <a
           href="link-to-your-photography-website"
