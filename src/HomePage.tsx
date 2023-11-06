@@ -13,14 +13,14 @@ const HomePage: React.FC = () => {
   useEffect(() => {
     ReactGA.initialize("YG-9F649HZLZH");
     ReactGA.pageview(window.location.pathname + window.location.search);
-    
+
     // You would fetch the images from your `public/photos` folder here
     // This is a placeholder for the actual image loading logic
     const numberOfPhotos = 10;
     const loadedPhotos = [];
-      for (let i = 1; i <= numberOfPhotos; i++) {
-        loadedPhotos.push(`/photos/photo${i}.jpg`); // Path should be relative to the public directory
-      } 
+    for (let i = 1; i <= numberOfPhotos; i++) {
+      loadedPhotos.push(`/photos/photo${i}.jpg`); // Path should be relative to the public directory
+    }
     setPhotos(loadedPhotos);
   }, []);
   const scrollToTop = () => {
@@ -308,13 +308,23 @@ const HomePage: React.FC = () => {
         <h3>Click and hold to enlarge an image!</h3>
         <div className="photo-grid">
           {photos.map((photo, index) => (
-            <img key={index} src={photo} alt={`Photography-${index}`} className="photo-item" />
+            <img
+              key={index}
+              src={photo}
+              alt={`Photography-${index}`}
+              className="photo-item"
+            />
           ))}
         </div>
-        <a>Visit Photography Website
-          href="https://www.icloud.com/sharedalbum/#B0ZJtdOXm0sDbc6"
+        <a
+          className="interactive-button-2"
+          href="Shivam Ratnani - Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ backgroundColor: theme.button }}
+        >
+          Visit Photography Website
         </a>
-
       </Element>
     </div>
   );
