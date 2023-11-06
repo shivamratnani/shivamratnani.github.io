@@ -144,7 +144,7 @@ li{
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: left;
-  font-size: clamp(12px, 3vw, 25px);
+  font-size: clamp(13px, 3vw, 25px);
 }
 
 .element hr {
