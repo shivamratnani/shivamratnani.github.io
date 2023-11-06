@@ -144,7 +144,7 @@ li{
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: left;
-  font-size: clamp(12px, 3vw, 25px);
+  font-size: clamp(16px, 3vw, 25px);
 }
 
 .element hr {
@@ -328,6 +328,23 @@ li{
   .certifications-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Iframe */
+.iframe-container {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: auto; /* This will be the aspect ratio of the iframe */
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: auto;
+}
 }
 
 @media (min-width: 1200px) {
