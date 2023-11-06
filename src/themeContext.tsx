@@ -26,7 +26,7 @@ export const themes = {
     about: 'darkgrey', // black
     p: '#ffffff', // white
     section: 'rgb(35, 35, 35)', // black
-    sectionHome: 'darrgb(45, 45, 45)kgrey', 
+    sectionHome: 'rgb(45, 45, 45)', 
     sectionResume: 'rgb(55, 55, 55)', 
     sectionProjects: 'rgb(65, 65, 65)', 
     sectionPhotography: 'rgb(75, 75, 75)'

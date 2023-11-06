@@ -115,7 +115,7 @@ const HomePage: React.FC = () => {
             style={{ backgroundColor: theme.about }}
           >
             <h1>About Me</h1>
-          <div className="divider"></div>
+            <div className="divider"></div>
             <p style={{ color: theme.p }}>
               My name is <b>Shivam Ratnani</b>, and I am a dedicated software
               engineer with a passion for solving complex problems and building
@@ -140,7 +140,7 @@ const HomePage: React.FC = () => {
               href="https://www.linkedin.com/in/shivamratnani"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: theme.button}}
+              style={{ backgroundColor: theme.button }}
             >
               LinkedIn
             </a>
@@ -180,10 +180,9 @@ const HomePage: React.FC = () => {
 
         <div className="projects-container">
           <div className="projects-section">
-            <h2>In Progress</h2>
-
-              <div className="divider"></div>
             <div className="project-box">
+              <h2>In Progress</h2>
+            <div className="divider"></div>
               {/* Mobile Task Application */}
               <h3>
                 Mobile Task Application |
@@ -229,47 +228,28 @@ const HomePage: React.FC = () => {
                 with documentation highlighting maintenance and update
                 requirements.
               </li>
-            </div>
-          </div>
 
-          <h2>Completed</h2>
+              <h2>Completed</h2>
               <div className="divider"></div>
-          <div className="projects-box">
-            {/* Website */}
-            <h3>Website github.com/shivamratnani/shivamratnani.github.io</h3>
-            <li>Created a website using HTML and CSS Styling</li>
-            <li>
-              Improvised my website using React.js and Material UI elements
-              allowing it to contain a dark mode feature, reactive buttons, and
-              mobile device compatibility
-            </li>
-            <li>
-              Uses Github Actions to host React app on shivamratnani.github.io
-              and a server through AWS to host a personal photography website
-            </li>
-            {/* Connect 4 */}
-            <h3>Connect 4 Game https://github.com/shivamratnani/Connect-4</h3>
-            <li>
-              Developed a 2 player game of Connect 4 containing multiple
-              difficulty levels with a graphical user interface, demonstrating
-              proficiency in object-oriented programming and game development
-              logic.
-            </li>
-            <li>
-              Designed game state management using custom methods for
-              horizontal, vertical, diagonal, and draw checks within the checks
-              class to determine game outcomes.
-            </li>
-            <li>
-              Implemented user interactions through the Java Scanner class for
-              input handling, allowing players to place pieces on a graphical
-              interface.
-            </li>
-            <li>
-              Constructed a user-friendly graphical interface using Java Swing,
-              allowing for interactive gameplay with button-based column
-              selections and panel-based board visualization.
-            </li>{" "}
+              {/* Website */}
+              <h3>Website github.com/shivamratnani/shivamratnani.github.io</h3>
+              <li>Created a website using HTML and CSS Styling</li>
+              <li>
+                Improvised my website using React.js and Material UI elements
+                allowing it to contain a dark mode feature, reactive buttons,
+                and mobile device compatibility
+              </li>
+              <li>
+                Uses Github Actions to host React app on shivamratnani.github.io
+                and a server through AWS to host a personal photography website
+              </li>
+              {/* Connect 4 */}
+              <h3>Connect 4 Game https://github.com/shivamratnani/Connect-4</h3>
+              <li>
+                Developed a 2 player game of Connect 4 containing multiple
+                difficulty levels with a graphical user interface, demonstrating
+              </li>
+            </div>
           </div>
         </div>
       </Element>
@@ -279,12 +259,11 @@ const HomePage: React.FC = () => {
         className="element"
         style={{ backgroundColor: theme.sectionProjects }}
       >
-        <h1>Certifications</h1>
-              <div className="divider"></div>
+        <h1>Certifications In Progress</h1>
+        <div className="divider"></div>
         <div className="certification-box">
-          <h3>Certification</h3>
-          <p>Description of the certification goes here.</p>
-          {/* Other certification details */}
+          <h3>AWS Certified Solutions Architect - Associate (SAA-CO3)</h3>
+          <h3>Microsoft Azure AI Engineer</h3>
         </div>
       </Element>
 
@@ -317,7 +296,7 @@ const HomePage: React.FC = () => {
       >
         <h1>Photography</h1>
         <hr />
-        <p>Your inline website view goes here</p>
+        <iframe src="https://www.icloud.com/sharedalbum/#B0ZJtdOXm0sDbc6" style={{width: '100%', height: '500px'}}></iframe>
         <a
           href="link-to-your-photography-website"
           className="interactive-button"

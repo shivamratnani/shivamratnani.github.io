@@ -1,10 +1,9 @@
 // src/App.tsx
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import HomePage from './HomePage';
 import { ThemeContext, themes } from './themeContext';
-import ReactGA from 'react-ga';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState(themes.light);

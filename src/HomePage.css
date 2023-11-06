@@ -141,7 +141,7 @@ li{
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 20px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .element hr {
@@ -163,7 +163,7 @@ li{
 
 
 /* Projects and Certifications Grid */
-.projects-container,
+.projects-container, .projects-completed
 .certifications-grid {
   width: 100%;
   margin-top: 20px;
@@ -173,7 +173,7 @@ li{
   margin-bottom: 40px;
 }
 
-.projects-grid,
+.projects-grid, .projects-completed
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
