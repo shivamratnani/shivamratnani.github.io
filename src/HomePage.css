@@ -196,6 +196,34 @@ li{
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
+/* Photo Grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  position: relative; /* Add this to position the hovered images absolutely within the grid */
+  overflow: hidden; /* Add this to prevent the images from overflowing their containers */
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional, if you want rounded corners */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.photo-grid img:active {
+  position: fixed; /* Position fixed to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) scale(0.9); /* Center and scale */
+  z-index: 10; /* Above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional: Add a background overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+}
+
 /* Adjustments for responsiveness */
 @media (max-width: 768px) {
   .navbar {

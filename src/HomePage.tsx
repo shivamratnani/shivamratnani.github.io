@@ -1,6 +1,6 @@
 // src/HomePage.tsx
 
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./HomePage.css";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { ThemeContext } from "./themeContext";
@@ -8,12 +8,21 @@ import ReactGA from "react-ga";
 
 const HomePage: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const [photos, setPhotos] = useState<string[]>([]);
 
   useEffect(() => {
     ReactGA.initialize("YG-9F649HZLZH");
     ReactGA.pageview(window.location.pathname + window.location.search);
+    
+    // You would fetch the images from your `public/photos` folder here
+    // This is a placeholder for the actual image loading logic
+    const numberOfPhotos = 10;
+    const loadedPhotos = [];
+      for (let i = 1; i <= numberOfPhotos; i++) {
+        loadedPhotos.push(`/photos/photo${i}.jpg`); // Path should be relative to the public directory
+      } 
+    setPhotos(loadedPhotos);
   }, []);
-
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -182,7 +191,7 @@ const HomePage: React.FC = () => {
           <div className="projects-section">
             <div className="project-box">
               <h2>In Progress</h2>
-            <div className="divider"></div>
+              <div className="divider"></div>
               {/* Mobile Task Application */}
               <h3>
                 Mobile Task Application |
@@ -296,14 +305,16 @@ const HomePage: React.FC = () => {
       >
         <h1>Photography</h1>
         <hr />
-        <iframe src="https://www.icloud.com/sharedalbum/#B0ZJtdOXm0sDbc6" style={{width: '100%', height: '500px'}}></iframe>
-        <a
-          href="link-to-your-photography-website"
-          className="interactive-button"
-          style={{ backgroundColor: theme.button }}
-        >
-          Visit Photography Website
+        <h3>Click and hold to enlarge an image!</h3>
+        <div className="photo-grid">
+          {photos.map((photo, index) => (
+            <img key={index} src={photo} alt={`Photography-${index}`} className="photo-item" />
+          ))}
+        </div>
+        <a>Visit Photography Website
+          href="https://www.icloud.com/sharedalbum/#B0ZJtdOXm0sDbc6"
         </a>
+
       </Element>
     </div>
   );
