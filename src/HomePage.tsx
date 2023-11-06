@@ -318,7 +318,7 @@ const HomePage: React.FC = () => {
         </div>
         <a
           className="interactive-button-2"
-          href="Shivam Ratnani - Resume.pdf"
+          href="https://www.icloud.com/sharedalbum/#B0ZJtdOXm0sDbc6"
           target="_blank"
           rel="noopener noreferrer"
           style={{ backgroundColor: theme.button }}
