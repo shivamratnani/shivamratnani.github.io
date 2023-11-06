@@ -16,10 +16,10 @@ const HomePage: React.FC = () => {
 
     // You would fetch the images from your `public/photos` folder here
     // This is a placeholder for the actual image loading logic
-    const numberOfPhotos = 10;
+    const numberOfPhotos = 23;
     const loadedPhotos = [];
     for (let i = 1; i <= numberOfPhotos; i++) {
-      loadedPhotos.push(`/photos/photo${i}.jpg`); // Path should be relative to the public directory
+      loadedPhotos.push(`/Photos/photo${i}.jpg`); // Path should be relative to the public directory
     }
     setPhotos(loadedPhotos);
   }, []);
@@ -311,8 +311,7 @@ const HomePage: React.FC = () => {
             <img
               key={index}
               src={photo}
-              alt={`Photography-${index}`}
-              className="photo-item"
+              alt={`photo-${index}`}
             />
           ))}
         </div>
