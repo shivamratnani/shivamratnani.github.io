@@ -19,7 +19,7 @@ export const themes = {
   },
   dark: {
     foreground: '#ffffff',
-    background: 'darkgrey',
+    background: 'black',
     button: '#7ca666', // sage green
     upButton: 'lightblue', // light blue
     toggle: '#7ca666', // sage green

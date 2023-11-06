@@ -116,7 +116,7 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionHome }}
       >
         <div className="about-container">
-          <div className="profile-container">
+          <div className="profile-container" style={{ backgroundColor: theme.about }}>
             <img src="profile.jpg" className="profile-image" alt="Profile" />
           </div>
           <div
@@ -173,7 +173,7 @@ const HomePage: React.FC = () => {
               rel="noopener noreferrer"
               style={{ backgroundColor: theme.button }}
             >
-              Download Resume
+              Resume
             </a>
           </div>
         </div>
@@ -193,10 +193,8 @@ const HomePage: React.FC = () => {
               <h2>In Progress</h2>
               <div className="divider"></div>
               {/* Mobile Task Application */}
-              <h3>
-                Mobile Task Application |
-                github.com/shivamratnani/Flutter-Task-App
-              </h3>
+              <h3>Mobile Task Application</h3>
+              <h3>github.com/shivamratnani/Flutter-Task-App</h3>
               <li>
                 Specializes in cross-platform and native iOS app development,
                 utilizing Flutter and SwiftUI to deliver a highly responsive
@@ -213,11 +211,9 @@ const HomePage: React.FC = () => {
                 notifications and iCloud syncing, ensuring seamless task
                 management and device synchronization for users.
               </li>
-
               {/* Amazon Web Scraper */}
-              <h3>
-                Amazon Web Scraper github.com/shivamratnani/Amazon-Web-Scraper
-              </h3>
+              <h3>Amazon Web Scraper</h3>
+              <h3>github.com/shivamratnani/Amazon-Web-Scraper</h3>
               <li>
                 Engineered a Python scraper to collect Amazon product data,
                 utilizing BeautifulSoup, Selenium, and requests for web parsing,
@@ -237,11 +233,11 @@ const HomePage: React.FC = () => {
                 with documentation highlighting maintenance and update
                 requirements.
               </li>
-
               <h2>Completed</h2>
               <div className="divider"></div>
               {/* Website */}
-              <h3>Website github.com/shivamratnani/shivamratnani.github.io</h3>
+              <h3>Website</h3>
+              <h3>github.com/shivamratnani/shivamratnani.github.io</h3>
               <li>Created a website using HTML and CSS Styling</li>
               <li>
                 Improvised my website using React.js and Material UI elements
@@ -253,11 +249,29 @@ const HomePage: React.FC = () => {
                 and a server through AWS to host a personal photography website
               </li>
               {/* Connect 4 */}
-              <h3>Connect 4 Game https://github.com/shivamratnani/Connect-4</h3>
+              <h3>Connect 4 Game</h3>
+              <h3>github.com/shivamratnani/Connect-4</h3>
               <li>
                 Developed a 2 player game of Connect 4 containing multiple
                 difficulty levels with a graphical user interface, demonstrating
+                proficiency in object-oriented programming and game development
+                logic.
               </li>
+              <li>
+                Designed game state management using custom methods for
+                horizontal, vertical, diagonal, and draw checks within the
+                checks class to determine game outcomes.
+              </li>
+              <li>
+                Implemented user interactions through the Java Scanner class for
+                input handling, allowing players to place pieces on a graphical
+                interface.
+              </li>
+              <li>
+                Constructed a user-friendly graphical interface using Java
+                Swing, allowing for interactive gameplay with button-based
+                column selections and panel-based board visualization.
+              </li>{" "}
             </div>
           </div>
         </div>
@@ -308,11 +322,7 @@ const HomePage: React.FC = () => {
         <h3>Click and hold to enlarge an image!</h3>
         <div className="photo-grid">
           {photos.map((photo, index) => (
-            <img
-              key={index}
-              src={photo}
-              alt={`Photography-${index}`}
-            />
+            <img key={index} src={photo} alt={`Photography-${index}`} />
           ))}
         </div>
         <a
