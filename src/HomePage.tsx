@@ -311,7 +311,6 @@ const HomePage: React.FC = () => {
             <img
               key={index}
               src={photo}
-              alt={`Photo-${index}`}
             />
           ))}
         </div>
