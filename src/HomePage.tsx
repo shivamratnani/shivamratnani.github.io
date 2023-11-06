@@ -260,8 +260,8 @@ const HomePage: React.FC = () => {
               {/* Website */}
               <h3>Website</h3>
               <h3>
-              <a
-                  href="github.com/shivamratnani/shivamratnani.github.io"
+                <a
+                  href="https://github.com/shivamratnani/shivamratnani.github.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: 'black' }}
