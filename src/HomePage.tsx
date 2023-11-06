@@ -116,7 +116,10 @@ const HomePage: React.FC = () => {
         style={{ backgroundColor: theme.sectionHome }}
       >
         <div className="about-container">
-          <div className="profile-container" style={{ backgroundColor: theme.about }}>
+          <div
+            className="profile-container"
+            style={{ backgroundColor: theme.about }}
+          >
             <img src="profile.jpg" className="profile-image" alt="Profile" />
           </div>
           <div
@@ -194,7 +197,16 @@ const HomePage: React.FC = () => {
               <div className="divider"></div>
               {/* Mobile Task Application */}
               <h3>Mobile Task Application</h3>
-              <h3>github.com/shivamratnani/Flutter-Task-App</h3>
+              <h3>
+              <a
+                  href="github.com/shivamratnani/Flutter-Task-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'black' }}
+                >
+                  github.com/shivamratnani/Flutter-Task-App
+                </a>
+              </h3>
               <li>
                 Specializes in cross-platform and native iOS app development,
                 utilizing Flutter and SwiftUI to deliver a highly responsive
@@ -213,7 +225,17 @@ const HomePage: React.FC = () => {
               </li>
               {/* Amazon Web Scraper */}
               <h3>Amazon Web Scraper</h3>
-              <h3>github.com/shivamratnani/Amazon-Web-Scraper</h3>
+              {/* List a link as an h3*/}
+              <h3>
+                <a
+                  href="github.com/shivamratnani/Amazon-Web-Scraper"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'black' }}
+                >
+                  github.com/shivamratnani/Amazon-Web-Scraper
+                </a>
+              </h3>
               <li>
                 Engineered a Python scraper to collect Amazon product data,
                 utilizing BeautifulSoup, Selenium, and requests for web parsing,
@@ -237,7 +259,16 @@ const HomePage: React.FC = () => {
               <div className="divider"></div>
               {/* Website */}
               <h3>Website</h3>
-              <h3>github.com/shivamratnani/shivamratnani.github.io</h3>
+              <h3>
+              <a
+                  href="github.com/shivamratnani/shivamratnani.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'black' }}
+                >
+                  github.com/shivamratnani/shivamratnani.github.io
+                </a>
+              </h3>
               <li>Created a website using HTML and CSS Styling</li>
               <li>
                 Improvised my website using React.js and Material UI elements
@@ -250,7 +281,16 @@ const HomePage: React.FC = () => {
               </li>
               {/* Connect 4 */}
               <h3>Connect 4 Game</h3>
-              <h3>github.com/shivamratnani/Connect-4</h3>
+              <h3>
+              <a
+                  href="github.com/shivamratnani/Connect-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'black' }}
+                >
+                  github.com/shivamratnani/Connect-4
+                </a>
+              </h3>
               <li>
                 Developed a 2 player game of Connect 4 containing multiple
                 difficulty levels with a graphical user interface, demonstrating

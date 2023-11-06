@@ -56,14 +56,15 @@
   padding: 2vw;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 15px; /* Optional: Makes the button circular */
+  border-radius: 15px;
   background-color: #c4a484; /* Same as navbar for consistency */
   color: white;
   border: none;
+
 }
 
 .to-top-button:hover {
-  transform: scale(1.1); /* Optional: Adds a slight zoom effect on hover */
+  transform: scale(1.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -211,7 +212,7 @@ li{
 .photo-grid img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Optional, if you want rounded corners */
+  border-radius: 10px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -222,7 +223,6 @@ li{
   transform: translate(-50%, -50%) scale(0.9); /* Center and scale */
   z-index: 10; /* Above other content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Optional: Add a background overlay */
   background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
 }
 
