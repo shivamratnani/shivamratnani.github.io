@@ -5,10 +5,13 @@ import "./HomePage.css";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { ThemeContext } from "./themeContext";
 import ReactGA from "react-ga";
+import axios from 'axios';
 
 const HomePage: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [photos, setPhotos] = useState<string[]>([]);
+
+  const [viewCount, setViewCount] = useState<number | null>(null);
 
   useEffect(() => {
     ReactGA.initialize("YG-9F649HZLZH");
@@ -22,6 +25,20 @@ const HomePage: React.FC = () => {
       loadedPhotos.push(`/Photos/photo${i}.jpg`); // Path should be relative to the public directory
     }
     setPhotos(loadedPhotos);
+
+    // Fetch the view count from the backend
+    const fetchViewCount = async () => {
+      try {
+        const response = await axios.get('/viewCount'); // Make sure this URL is correct based on your server setup
+        setViewCount(response.data.count); // Set the view count state
+      } catch (error) {
+        console.error('Error fetching view count:', error);
+        setViewCount(null); // In case of an error, set the view count to null or a default value
+      }
+    };
+
+    fetchViewCount();
+
   }, []);
   const scrollToTop = () => {
     scroll.scrollToTop();
@@ -178,6 +195,12 @@ const HomePage: React.FC = () => {
             >
               Resume
             </a>
+            {/* View Count Display */}
+        {viewCount !== null && (
+          <p style={{ color: theme.p }}>
+            This website has been viewed {viewCount} times.
+          </p>
+        )}
           </div>
         </div>
       </Element>
