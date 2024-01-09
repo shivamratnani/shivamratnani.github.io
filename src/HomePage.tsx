@@ -283,12 +283,12 @@ const HomePage: React.FC = () => {
               <h3>Connect 4 AI Game</h3>
               <h3>
                 <a
-                  href="github.com/shivamratnani/Connect4-AI"
+                  href="https://github.com/shivamratnani/Connect4-AI.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: "black" }}
                 >
-                  github.com/shivamratnani/Connect4-AI
+                  https://github.com/shivamratnani/Connect4-AI.git
                 </a>
               </h3>
               <li>
