@@ -198,11 +198,11 @@ const HomePage: React.FC = () => {
               {/* Mobile Task Application */}
               <h3>Mobile Task Application</h3>
               <h3>
-              <a
+                <a
                   href="github.com/shivamratnani/Flutter-Task-App"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: 'black' }}
+                  style={{ color: "black" }}
                 >
                   github.com/shivamratnani/Flutter-Task-App
                 </a>
@@ -231,7 +231,7 @@ const HomePage: React.FC = () => {
                   href="github.com/shivamratnani/Amazon-Web-Scraper"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: 'black' }}
+                  style={{ color: "black" }}
                 >
                   github.com/shivamratnani/Amazon-Web-Scraper
                 </a>
@@ -264,7 +264,7 @@ const HomePage: React.FC = () => {
                   href="https://github.com/shivamratnani/shivamratnani.github.io"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: 'black' }}
+                  style={{ color: "black" }}
                 >
                   github.com/shivamratnani/shivamratnani.github.io
                 </a>
@@ -280,37 +280,51 @@ const HomePage: React.FC = () => {
                 and a server through AWS to host a personal photography website
               </li>
               {/* Connect 4 */}
-              <h3>Connect 4 Game</h3>
+              <h3>Connect 4 AI Game</h3>
               <h3>
-              <a
-                  href="github.com/shivamratnani/Connect-4"
+                <a
+                  href="github.com/shivamratnani/Connect4-AI"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: 'black' }}
+                  style={{ color: "black" }}
                 >
-                  github.com/shivamratnani/Connect-4
+                  github.com/shivamratnani/Connect4-AI
                 </a>
               </h3>
               <li>
-                Developed a 2 player game of Connect 4 containing multiple
-                difficulty levels with a graphical user interface, demonstrating
-                proficiency in object-oriented programming and game development
-                logic.
+                Graphical User Interface Development with Pygame: Crafted an
+                engaging graphical user interface for Connect Four using
+                Python's Pygame library, featuring real-time game state updates,
+                responsive mouse event handling, and visually appealing design
+                elements like colored discs and a grid-like game board.
               </li>
               <li>
-                Designed game state management using custom methods for
-                horizontal, vertical, diagonal, and draw checks within the
-                checks class to determine game outcomes.
+                Minimax Algorithm Implementation for AI Decision-Making:
+                Utilized the Minimax algorithm to enable AI to simulate and
+                evaluate potential moves, predicting player and AI actions for
+                strategic gameplay. This approach provided the AI with a deep
+                understanding of the game mechanics and potential outcomes.
               </li>
               <li>
-                Implemented user interactions through the Java Scanner class for
-                input handling, allowing players to place pieces on a graphical
-                interface.
+                Alpha-Beta Pruning for Computational Efficiency: Integrated
+                alpha-beta pruning into the Minimax algorithm, significantly
+                enhancing computational efficiency by reducing the number of
+                explored nodes, thus enabling faster and more efficient AI
+                decision-making in complex game scenarios.
               </li>
               <li>
-                Constructed a user-friendly graphical interface using Java
-                Swing, allowing for interactive gameplay with button-based
-                column selections and panel-based board visualization.
+                Heuristic Evaluation Function for Board Assessment: Developed
+                heuristic evaluation functions to dynamically assess the game
+                board's state, enabling the AI to score various board
+                configurations and recognize key strategic positions such as
+                potential wins or defensive plays.
+              </li>
+              <li>
+                Dynamic AI Gameplay and Enhanced Player Interaction: Established
+                a challenging, turn-based gameplay experience with an AI
+                opponent capable of making varied and unpredictable decisions
+                based on the game's evolving state, thereby increasing the
+                game's replayability and engagement factor.
               </li>{" "}
             </div>
           </div>
